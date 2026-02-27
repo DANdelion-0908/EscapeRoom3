@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         PlayerAnimator.SetFloat("Speed", PlayerAgent.velocity.magnitude);
+        Debug.Log(PlayerAgent.velocity.magnitude);
 
         if (Mouse.current.rightButton.isPressed)
         {
